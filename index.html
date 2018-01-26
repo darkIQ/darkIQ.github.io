@@ -371,6 +371,7 @@
 <p>第二种方法就是要观察数列的规律，为偶数的项的产生有没有规律。当然。。我都这么说了显然是有了。</p>
 <p><code>1,1, 2, 3, 5, 8, 13, 21, 34, 55, 89,144..</code> 我们发现这些为偶数的项每隔两项就会出现（奇数偶数的性质决定的），这样我们循环的时候可以把步长加大，更迅速的求出结果。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">n=<span class="number">2</span></span><br><span class="line">sum=<span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> <span class="number">1</span>:</span><br><span class="line">    res=fibonacci(n)</span><br><span class="line">    <span class="keyword">if</span> fibonacci(n)&gt;<span class="number">4000000</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    sum = sum+res</span><br><span class="line">    n+=<span class="number">3</span></span><br><span class="line"><span class="keyword">print</span> sum</span><br></pre></td></tr></table></figure>
+<p>-EOF-</p>
 
           
         
